@@ -1,7 +1,23 @@
 aid: sparkcharge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sparkcharge.png
 name: SparkCharge
-description: SparkCharge is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SparkCharge operates one of the world's largest off-grid and mobile EV charging
+  networks, delivering on-demand electric vehicle charging to commercial and fleet operators
+  without fixed grid infrastructure. Its offerings span mobile battery-based charging dispatched
+  by technicians, portable off-grid power hubs, and permanent charging installations, serving
+  delivery, rideshare, automotive, ports, and event customers. As of this enrichment pass no
+  public developer API, SDK, developer portal, or documentation surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/sparkcharge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Electric Vehicles
+- EV Charging
+- Energy
+- Fleet
+- Mobility
+- Charging Infrastructure
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sparkcharge-domain-security.yml
 - type: Website
   url: https://sparkcharge.io/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
